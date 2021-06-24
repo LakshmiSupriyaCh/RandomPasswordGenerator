@@ -1,5 +1,3 @@
-package mailandpassword;
-
 import java.io.*;
 import java.util.*;
 public class generatingMailAndPassword {
@@ -29,14 +27,14 @@ class Email
 	System.out.println("Welcome "+ firstName + " " + lastName );
 	System.out.println("************************************");
 	department();
-	 String email_id=(firstName + "." + lastName + "@"+  departmentName +  "." +  companyName + ".com");
+	 String email_id=(firstName.toLowerCase() + "." + lastName.toLowerCase() + "@"+  departmentName +  "." +  companyName + ".com");
  	System.out.println("Your Mail-ID : " + email_id);
      password(8);
 	}
 private void department()
    {
 	   System.out.println("Choose your department from the List below:" );
-	   System.out.println(" Production  (Code:11) \n Accounting (Code:12) \n Sales (Code:13) \n R&D (Code:14) \n Finance (Code:15)");
+	   System.out.println(" Production  (Code:11) \n Accounting (Code:12) \n Sales      (Code:13) \n R&D        (Code:14) \n Finance     (Code:15)");
 	   System.out.println("Enter your department code:");
 	   Scanner input = new Scanner(System.in);
 	   int choice=input.nextInt();
