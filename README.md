@@ -5,3 +5,5 @@ To run this code you can use Eclipse IDE or Command Prompt.
 Compilation : javac generatingMailAndPassword.java
 
 Run : java generatingMailAndPassword
+
+Code in : src/generatingMailAndPassword.java
